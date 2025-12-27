@@ -15,11 +15,11 @@ class CategoryFactory(factory.django.DjangoModelFactory):
 
 class ProductFactory(factory.django.DjangoModelFactory):
     price = factory.Faker("pyint")
-    category = factory.LazyAttribute(CategoryFactory)
+    category = factory.LazyAttribute(CategoryFactory)  # campo
     title = factory.Faker("pystr")
 
     @factory.post_generation
-    def category(self, create, extracted, **kwargs):
+    def categories(self, create, extracted, **kwargs):  # método renomeado
         if not create:
             return
 

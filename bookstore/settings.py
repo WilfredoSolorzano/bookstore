@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-os@p$e0n#f+w%yom*7-j@1tsel8+wb7_-4mg@jh0gxndiz0)jy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 
 # Application definition
@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'rest_framework',
+    "rest_framework",
     "order",
     "product",
-    'debug_toolbar',
-    'django_extensions',
-    'rest_framework.authtoken',
+    "debug_toolbar",
+    "django_extensions",
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [
@@ -140,5 +140,4 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.SessionAuthentication",
         "rest_framework.authentication.TokenAuthentication",
     ],
-
 }

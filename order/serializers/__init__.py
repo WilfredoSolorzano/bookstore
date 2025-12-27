@@ -1,4 +1,1 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from .order_serializer import OrderSerializer
+from .order_serializer import OrderSerializer  # noqa: F401
