@@ -1,0 +1,25 @@
+[flake8]
+max-line-length = 88
+
+# Ignore estes erros
+ignore = E203, W503, E501
+
+# Exclua estas pastas
+exclude = 
+    .git,
+    __pycache__,
+    .venv,
+    venv,
+    env,
+    .env,
+    build,
+    dist,
+    migrations,
+    .pytest_cache,
+    .idea,
+    .vscode,
+    */.tox/*,
+    */site-packages/*
+# Ignorar imports não utilizados em arquivos __init__.py
+per-file-ignores =
+    */__init__.py:F401
