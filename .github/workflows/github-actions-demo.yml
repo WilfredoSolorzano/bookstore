@@ -1,22 +1,18 @@
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 on:
   push:
 
 jobs:
-  Explore-GitHub-Actions:
+  explore-github-actions:
     runs-on: ubuntu-latest
 
     steps:
       - name: Show trigger info
-        run: echo "🎉 Triggered by ${{ github.event_name }}"
+        run: echo "Triggered by ${{ github.event_name }}"
 
       - name: Show runner info
-        run: echo "🐧 Running on ${{ runner.os }}"
-
-      - name: Show repo info
-        run: echo "📦 Repo: ${{ github.repository }} | Branch: ${{ github.ref }}"
+        run: echo "Running on ${{ runner.os }}"
 
       - name: Checkout repository
         uses: actions/checkout@v4
