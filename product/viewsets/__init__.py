@@ -1,2 +1,5 @@
-from .category_viewset import CategoryViewSet  # noqa: F401
-from .product_viewset import ProductViewSet  # noqa: F401
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .category_viewset import CategoryViewSet
+from .product_viewset import ProductViewSet

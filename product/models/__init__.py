@@ -1,2 +1,5 @@
-from .category import Category  # noqa: F401
-from .product import Product  # noqa: F401
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .category import Category
+from .product import Product
