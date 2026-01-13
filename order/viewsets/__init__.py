@@ -1,1 +1,4 @@
-from .order_viewset import OrderViewSet  # noqa: F401
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .order_viewset import OrderViewSet

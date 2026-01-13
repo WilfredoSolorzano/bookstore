@@ -1,0 +1,22 @@
+name: GitHub Actions Demo
+
+on:
+  push:
+
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show trigger info
+        run: echo "Triggered by ${{ github.event_name }}"
+
+      - name: Show runner info
+        run: echo "Running on ${{ runner.os }}"
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
+

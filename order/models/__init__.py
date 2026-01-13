@@ -1,1 +1,4 @@
-from .order import Order  # noqa: F401
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .order import Order

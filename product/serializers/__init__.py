@@ -1,2 +1,5 @@
-from .category_serializer import CategorySerializer  # noqa: F401
-from .product_serializer import ProductSerializer  # noqa: F401
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from .category_serializer import CategorySerializer
+from .product_serializer import ProductSerializer
