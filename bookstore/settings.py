@@ -1,7 +1,7 @@
 """
 Django settings for bookstore project.
 """
-
+import os.path
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -68,7 +68,7 @@ ROOT_URLCONF = "bookstore.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR,"bookstore","templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
