@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-os@p$e0n#f+w%yom*7-j@1tsel8+wb7_-4mg@jh0gxndiz0)jy"
 
-DEBUG = True  # depois mude para False
+DEBUG = False  # depois mude para False
 
 ALLOWED_HOSTS = [
     "wimer22.pythonanywhere.com",
